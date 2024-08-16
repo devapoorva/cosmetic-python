@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Demand Forecasting</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="static/css/style.css" rel="stylesheet">
+
+    <style>
+        .destab tr,
+        th {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="{{ url_for('index')}}" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 display-5 text-uppercase text-primary">Demand Forecasting</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-0">
+                    <a href="{{ url_for('index')}}" class="nav-item nav-link">Home</a>
+                    <a href="{{ url_for('login')}}" class="nav-item nav-link">Login</a>
+                    <a href="{{ url_for('analysis')}}" class="nav-item nav-link active">Analysis</a>
+                    <a href="{{ url_for('prediction')}}" class="nav-item nav-link">Prediction</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid mb-5">
+        <div class="container text-center py-5">
+            <h1 class="text-white display-3">Analysis</h1>
+        </div>
+    </div>
+    <!-- Header End -->
+    <!-- GRAPHS AND  TABLES GO HERE  -->
+    <h4 style="margin-left: 20px;">Data Description:</h4><br>
+    <div style="overflow-x : auto; margin-left: 10px;">
+        {% for table in destab %}
+        {{table | safe}}
+        {% endfor %}
+    </div>
+
+    <div style="margin-left: 10px;">
+        <br><br>
+        <h4 style="margin-left: 10px;">Data Modeling : </h4><br>
+        <p style="margin: 25px;">
+
+            In the business world, knowing the relationship between two variables is very valuable for data-driven
+            decision-making. In this case, the "correlation coefficient" can be used to calculate the relationship
+            between two quantitative variables.
+
+        </p>
+        <br>
+        <h5 style="margin-left: 35px;">Temperature Graph : </h5><br>
+
+        <div style="overflow-x : auto;">
+            <img src="static/images/try1.png">
+        </div>
+
+        <br>
+        <h5 style="margin-left: 35px;">Pairplots : </h5><br>
+
+        <h5 style="margin-left: 60px;">Pairplot 1 : </h5><br>
+
+        <div style="overflow-x : auto;">
+            <img src="static/images/try2.png">
+        </div>
+
+        <br>
+        <h5 style="margin-left: 60px;">Pairplot 2 : </h5><br>
+
+        <div style="overflow-x : auto;">
+            <img src="static/images/try3.png">
+        </div>
+
+        <br>
+        <h5 style="margin-left: 60px;">Pairplot 3 : </h5><br>
+
+        <div style="overflow-x : auto;">
+            <img src="static/images/try4.png">
+        </div>
+
+        <br><br>
+        <h4 style="margin-left: 10px;">Data Visualisation : </h4><br>
+
+        <p style="margin: 25px;">
+            GroupBy:
+
+            Product type, Routes, Customer demographics, Shipping carrier, Location, and Transportation modes are
+            divided
+            into distinct groups using the "group by" method, and in each category, the key elements like Revenue,
+            Costs,
+            Stock levels, and Order quantities are examined
+        </p>
+
+        <br>
+        <h5 style="margin-left: 60px;">Product Type : </h5><br>
+
+        <div style="overflow-x : auto;">
+            <img src="static/images/try5.png">
+        </div>
+
+        <br>
+        <h5 style="margin-left: 60px;">Customer Demographics : </h5><br>
+
+        <div style="overflow-x : auto;">
+            <img src="static/images/try6.png">
+        </div>
+
+        <div style="overflow-x : auto;">
+            <img src="static/images/try7.png">
+        </div>
+
+        <br>
+        <h5 style="margin-left: 60px;">Routes : </h5><br>
+
+        <div style="overflow-x : auto;">
+            <img src="static/images/try8.png">
+        </div>
+
+        <br>
+        <h5 style="margin-left: 60px;">Transportation Modes : </h5><br>
+
+        <div style="overflow-x : auto;">
+            <img src="static/images/try9.png">
+        </div>
+
+        <div style="overflow-x : auto;">
+            <img src="static/images/try10.png">
+        </div>
+
+        <br><br>
+        <h4 style="margin-left: 10px;">Data Modeling : </h4><br>
+        <p style="margin: 25px;">
+            Data modelling in supply chain management allows a company to respond quickly to market trends, adapt
+            production, and optimise logistics to ensure optimal supply chain performance. Consequently, a company will
+            be
+            able to maximise production, optimise transportation, and save money. Furthermore, the company can make
+            data-driven decisions and take proactive measures to meet customer expectations, streamline processes, and
+            optimise resources (Siththardhan, 2023).
+            <br><br>
+            <b>Regression Models :</b>
+            <br><br>
+
+            Regression models can identify patterns, recognize demand indications, and identify correlations between
+            variables in large datasets. According to McKinsey ML-based supply chain solutions can cut prediction
+            mistakes
+            by up to 50%.
+        </p>
+        <br>
+        <h5 style="margin-left: 35px;">Linear Regression 1 : </h5><br>
+
+        <div style="overflow-x : auto;">
+            <img src="static/images/try11.png">
+        </div>
+
+        <br>
+        <h5 style="margin-left: 35px;">Linear Regression 2 : </h5><br>
+
+        <div style="overflow-x : auto;">
+            <img src="static/images/try12.png">
+        </div>
+        <br>
+        <p style="margin: 25px;">
+            <b>Classification Models</b><br><br>
+
+            In machine learning, classification is the process of predicting a categorical label for a given input
+            point. A
+            trained algorithm uses input features to map inputs to class labels (datacamp, 2023).
+            <br><br>
+            KNN Classifier for Routes
+            <br><br>
+            KNN is the most basic classification algorithm in Machine Learning. It belongs to the supervised learning
+            domain
+            and is used extensively for pattern recognition, data mining, and intrusion detection." The KNN algorithm is
+            non-parametric, meaning it does not assume anything about the distribution of the data and the model
+            structure
+            is determined entirely by the data. To predict the classification of a new sample point based on the K
+            (integer
+            number) closest points in a database, it uses a database in which the data points are separated into several
+            classes. We use the k-nearest neighbour algorithm to fit historical data and predict the future.
+        </p>
+        <br>
+        <h5 style="margin-left: 35px;">K Nearest Neighbours 1 : </h5><br>
+
+        <div style="overflow-x : auto;">
+            <img src="static/images/try13.png">
+        </div>
+
+        <br>
+        <h5 style="margin-left: 35px;">K Nearest Neighbours 2 : </h5><br>
+
+        <div style="overflow-x : auto;">
+            <img src="static/images/try14.png">
+        </div>
+
+    </div>
+
+    <!-- Footer Start -->
+    
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

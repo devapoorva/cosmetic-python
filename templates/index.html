@@ -1,0 +1,937 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Luxia-Beauty & Spa Center HTML Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="static/assets/img/favicon.ico">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="static/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/assets/css/animate.min.css">
+    <link rel="stylesheet" href="static/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="static/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="static/assets/font-flaticon/flaticon.css">
+    <link rel="stylesheet" href="static/assets/css/dripicons.css">
+    <link rel="stylesheet" href="static/assets/css/slick.css">
+    <link rel="stylesheet" href="static/assets/css/meanmenu.css">
+    <link rel="stylesheet" href="static/assets/css/default.css">
+    <link rel="stylesheet" href="static/assets/css/style.css">
+    <link rel="stylesheet" href="static/assets/css/responsive.css">
+</head>
+<body>
+<!-- header -->
+<header class="header-area header-area2">
+    <div class="header-top second-header d-none d-lg-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-8 d-none  d-md-block">
+                    <div class="header-cta">
+                        <ul>
+                            <li>
+                                <a href="#">info@example.com</a>
+                            </li>
+                            <li>
+                                <span>+91 72560 11646</span>
+                            </li>
+                            <li>
+                                <span>Mon - Sat:</span> 10:00 - 22:00
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 d-none d-lg-block">
+                    <div class="header-social text-right">
+                            <span>
+                                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" title="behance"><i class="fab fa-behance"></i></a>
+                                <a href="#" title="youtube"><i class="fab fa-youtube"></i></a>
+                                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+
+                               </span>
+                        <!--  /social media icon redux -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="header-sticky" class="menu-area">
+        <div class="container">
+            <div class="second-menu">
+                <div class="row align-items-center">
+                    <div class="col-xl-2 col-lg-2">
+                        <div class="logo">
+                            <a href="index.html"><img src="static/assets/img/logo/logo.png" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-8">
+
+                        <div class="main-menu text-center text-xl-center">
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li><a href="{{ url_for('index')}}">Home</a></li>
+                                    <li><a href="{{ url_for('about')}}">About Us</a></li>
+                                    <li><a href="{{ url_for('contact')}}">Contact</a></li>
+                                    <li><a href="{{ url_for('login')}}">Login</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 d-none d-xl-block mt-20 mb-20">
+                        <a href="{{ url_for('contact')}}" class="btn ss-btn"><i class="fas fa-angle-right btn-icon mr-1"></i> Get A Quote</a>
+
+                    </div>
+
+                    <div class="col-12">
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header-end -->
+
+<!-- main-area -->
+<main>
+
+    <!-- slider-area -->
+    <section id="home" class="slider-area slider-three fix p-relative">
+
+        <div class="slider-active">
+            <div class="single-slider slider-bg d-flex align-items-center" style="background: url(static/assets/img/slider/slider_img_bg.png) no-repeat;background-size: cover; background-position: center center;">
+                <div class="container">
+                    <div class="row justify-content-center pt-50">
+                        <div class="col-lg-6">
+                            <div class="slider-content s-slider-content text3 mt-150">
+                                <h5 data-animation="fadeInDown" data-delay=".4s">Beauty & Spa Center</h5>
+                                <h2 data-animation="fadeInUp" data-delay=".4s">Get Your Best Face Glow With Us</h2>
+                                <p data-animation="fadeInUp" data-delay=".6s">Suspendisse mollis cursus urna at malesuada. Morbi elementum dignissim nibh vitae egestas mauris quis dolor quis volutpat.</p>
+
+                                <div class="slider-btn mt-40">
+                                    <a href="services.html" class="btn ss-btn active mr-15" data-animation="fadeInRight" data-delay=".8s"><i class="fas fa-angle-right btn-icon mr-1"></i> Our Services</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="slider-img" data-animation="fadeInUp" data-delay=".4s">
+                                <img src="static/assets/img/slider/slider_img05.png" alt="slider_img05">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <!-- slider-area-end -->
+
+    <!-- about-area -->
+    <section id="about" class="about-area about-p pt-120 pb-120 p-relative">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-sm-12 pr-30">
+                    <div class="s-about-img p-relative">
+                        <img src="static/assets/img/features/about_img.png" alt="img">
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="about-content s-about-content">
+                        <div class="about-title second-atitle pb-15">
+                            <h2>The Essence Of Health & Vitality In One Place</h2>
+                            <div class="line mb-40"> <img src="static/assets/img/bg/circle_right.png" alt="circle_right"></div>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="icon"><i class="fal fa-check"></i></div>
+                                <div class="text">
+                                    <h4>We Are Result Oriented</h4>
+                                    <p>We are always promised to get the best result on our every project. We believe in best outcomes with an appropriate.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="fal fa-check"></i></div>
+                                <div class="text">
+                                    <h4>We Make The System To Execute It</h4>
+                                    <p>Beginning with the point by point business investigation of your image, item, and market; we add to an arrangement</p>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                        <div class="slider-btn mt-10">
+                            <a href="about.html" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s"><i class="fas fa-angle-right btn-icon mr-1"></i> Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- about-area-end -->
+
+    <!-- services-area -->
+    <section id="services" class="services-area pt-120 pb-90 fix" style=" background-image: url(img/bg/proved-bg.png); background-size: cover; background-repeat: no-repeat; background-color: #fff5f4;" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title center-align mb-50 text-center">
+                        <h2>
+                            What We Provide
+                        </h2>
+                        <span class="line5"> <img src="img/bg/circle_left.png" alt="circle_left"></span>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="services-box text-center wow fadeInUp  animated"  data-delay=".4s">
+                        <div class="services-icon">
+                            <img src="img/icon/pv-icon1.png" alt="icon01">
+                        </div>
+                        <div class="services-content2">
+                            <h5><a href="services-detail.html">Sports Massage</a> <span class="line5"> <img src="img/bg/bx-line.png"  alt="circle_left"></span></h5>
+                            <p>Maecenas porta elit sit amet orci gravida ornare proin eleifend dui sed porta varius donec vitae sapien non lorem mattis ullamcorper.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="services-box text-center wow fadeInDown  animated"  data-delay=".5s">
+                        <div class="services-icon">
+                            <img src="img/icon/pv-icon2.png" alt="icon01">
+                        </div>
+                        <div class="services-content2">
+                            <h5><a href="services-detail.html">Hot Stone Message</a> <span class="line5"> <img src="img/bg/bx-line.png"  alt="circle_left"></span></h5>
+                            <p>Maecenas porta elit sit amet orci gravida ornare proin eleifend dui sed porta varius donec vitae sapien non lorem mattis ullamcorper.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="services-box text-center wow fadeInUp  animated"  data-delay=".4s">
+                        <div class="services-icon">
+                            <img src="img/icon/pv-icon3.png" alt="icon01">
+                        </div>
+                        <div class="services-content2">
+                            <h5><a href="services-detail.html">Facil & Therophy</a> <span class="line5"> <img src="img/bg/bx-line.png"  alt="circle_left"></span></h5>
+                            <p>Maecenas porta elit sit amet orci gravida ornare proin eleifend dui sed porta varius donec vitae sapien non lorem mattis ullamcorper.</p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- services-area-end -->
+    <!-- gallery-area -->
+    <section id="work" class="pt-120 pb-90">
+        <div class="container-fluid">
+
+            <div class="portfolio ">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title center-align mb-50 text-center">
+                            <h2>
+                                Our Gallery
+                            </h2>
+                            <span class="line5"> <img src="img/bg/circle_left.png" alt="circle_left"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row align-items-center mb-50 text-center">
+                    <div class="col-lg-12">
+                        <div class="my-masonry">
+                            <div class="button-group filter-button-group ">
+                                <button class="active" data-filter="*">All Gallery</button>
+                                <button data-filter=".seo">Aroma therapy</button>
+                                <button data-filter=".marketing">Face masks</button>
+                                <button data-filter=".website">Geothermal Spa</button>
+                                <button data-filter=".smm">Sauna Relax</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="grid col4">
+
+                    <div class="grid-item seo">
+                        <div class="case-study-box">
+                            <div class="case-study-img">
+                                <a href="projects-detail.html"><img src="img/gallery/protfolio-img01.png" alt="protfolio"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item seo marketing">
+                        <div class="case-study-box">
+                            <div class="case-study-img">
+                                <a href="projects-detail.html"><img src="img/gallery/protfolio-img02.png" alt="protfolio"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="grid-item website">
+                        <div class="case-study-box">
+                            <div class="case-study-img">
+                                <a href="projects-detail.html"><img src="img/gallery/protfolio-img03.png" alt="protfolio"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="grid-item smm">
+                        <div class="case-study-box">
+                            <div class="case-study-img">
+                                <a href="projects-detail.html"><img src="img/gallery/protfolio-img04.png" alt="protfolio"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="grid-item marketing">
+                        <div class="case-study-box">
+                            <div class="case-study-img">
+                                <a href="projects-detail.html"><img src="img/gallery/protfolio-img05.png" alt="protfolio"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="grid-item seo">
+                        <div class="case-study-box">
+                            <div class="case-study-img">
+                                <a href="projects-detail.html"><img src="img/gallery/protfolio-img06.png" alt="protfolio"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="grid-item smm">
+                        <div class="case-study-box ">
+                            <div class="case-study-img">
+                                <a href="projects-detail.html"><img src="img/gallery/protfolio-img07.png" alt="protfolio"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="grid-item website">
+                        <div class="case-study-box">
+                            <div class="case-study-img">
+                                <a href="projects-detail.html"><img src="img/gallery/protfolio-img08.png" alt="protfolio"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-lg-12 mt-50">
+                        <a href="projects.html" class="btn ss-btn"><i class="fas fa-angle-right btn-icon mr-1"></i> View All Gallery</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- gallery-area-end -->
+
+    <!-- contact-area -->
+    <section id="contact" class="contact-area contact-bg pt-120 pb-120 p-relative fix" style="background-image:url(img/bg/contact-bg.png)">
+        <div class="contact-bg-an-01"><img src="img/bg/contact-bg-an-01.png" alt="contact-bg-an-01"></div>
+        <div class="contact-bg-an-02"><img src="img/bg/contact-bg-an-02.png" alt="contact-bg-an-01"></div>
+        <div class="container">
+
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="contact-bg02 wow fadeInLeft  animated">
+                        <div class="section-title mb-30">
+                            <h2>Make Appointment</h2>
+                            <span class="line5"> <img src="img/bg/circle_right.png" alt="circle_left"></span>
+                        </div>
+                        <form action="https://zcube.in/luxia/mail.php" method="post" class="contact-form ">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="contact-field p-relative c-name mb-20">
+                                        <input type="text" id="firstn" name="firstn" placeholder="First Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="contact-field p-relative c-email mb-20">
+                                        <input type="text" id="lastn" name="lastn" placeholder="Last Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="contact-field p-relative c-subject mb-20">
+                                        <input type="text" id="email" name="email" placeholder="Eamil" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="contact-field p-relative c-subject mb-20">
+                                        <input type="text" id="phone" name="phone" placeholder="Phone No." required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="contact-field p-relative c-option mb-20">
+                                        <select name="services" id="sr">
+                                            <option value="sports-massage">Sports Massage</option>
+                                            <option value="hot-stone-message">Hot Stone Message</option>
+                                            <option value="facil-therophy">Facil & Therophy</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="contact-field p-relative c-message mb-45">
+                                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Write comments"></textarea>
+                                    </div>
+                                    <div class="slider-btn">
+                                        <button class="btn ss-btn active" data-animation="fadeInRight" data-delay=".8s"><i class="fas fa-angle-right btn-icon mr-1"></i> Submint Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content s-about-content wow fadeInRight  animated pl-30">
+                        <div class="about-title second-atitle pb-20">
+
+                            <h2>
+                                Book Your Appointment For Relaxation
+                            </h2>
+                            <span class="line"> <img src="img/bg/circle_right.png" alt="circle_right"></span>
+                        </div>
+                        <p>Aenean pulvinar laoreet tellus ut tincidunt. Praesent a lectus egestas, finibus enim sit amet, mollis lorem. Sed a volutpat velit. Pellentesque habitant morbi tristique.</p>
+                        <p>Mauris aliquam condimentum quam in mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum mattis gravida odio, id blandit lacus ornare in. Praesent est odio, iaculis ut nibh fringilla, commodo porttitor turpis.</p>
+
+                        <p class="mt-30"><img src="img/bg/signature.png" alt="signature"></p>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- contact-area-end -->
+
+
+    <!-- pricing-area -->
+    <section id="pricing" class="pricing-area pt-120 pb-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title center-align mb-100 text-center">
+                        <h2>
+                            What We Provide
+                        </h2>
+                        <span class="line5"> <img src="img/bg/circle_left.png" alt="circle_left"></span>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="pricing-box pricing-box2 text-center mb-60  wow fadeInLeft  animated">
+                        <div class="pricing-head">
+                            <div class="icon mb-30">
+                                <img src="img/icon/pr-icon1.png" alt="circle_right">
+                            </div>
+                            <h2>Regular Member</h2>
+                            <hr>
+                        </div>
+
+                        <div class="pricing-body mt-30 text-center">
+                            <ul>
+                                <li>Aroma therapy</li>
+                                <li>Face masks</li>
+                                <li>Geothermal Spa</li>
+                                <li>Sauna relax</li>
+                                <li>Aroma therapy</li>
+                            </ul>
+                        </div>
+                        <div class="price-count mb-30">
+                            <h2><sub>$</sub>49 <strong>/ Monthly</strong></h2>
+                        </div>
+
+                        <div class="pricing-btn">
+                            <a href="shop-details.html" class="btn ss-btn"><i class="fas fa-angle-right btn-icon mr-1"></i> Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="pricing-box pricing-box2 text-center mb-60  wow fadeInDown  animated">
+                        <div class="pricing-head">
+                            <div class="icon mb-30">
+                                <img src="img/icon/pr-icon2.png" alt="circle_right">
+                            </div>
+                            <h2>VIP Member</h2>
+                            <hr>
+                        </div>
+
+                        <div class="pricing-body mt-30 text-center">
+                            <ul>
+                                <li>Aroma therapy</li>
+                                <li>Face masks</li>
+                                <li>Geothermal Spa</li>
+                                <li>Sauna relax</li>
+                                <li>Aroma therapy</li>
+                            </ul>
+                        </div>
+                        <div class="price-count mb-30">
+                            <h2><sub>$</sub>79 <strong>/ Monthly</strong></h2>
+                        </div>
+
+                        <div class="pricing-btn">
+                            <a href="shop-details.html" class="btn ss-btn"><i class="fas fa-angle-right btn-icon mr-1"></i> Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="pricing-box pricing-box2 text-center mb-60  wow fadeInRight  animated">
+                        <div class="pricing-head">
+                            <div class="icon mb-30">
+                                <img src="img/icon/pr-icon3.png" alt="circle_right">
+                            </div>
+                            <h2>Premium Member</h2>
+                            <hr>
+                        </div>
+
+                        <div class="pricing-body mt-30 text-center">
+                            <ul>
+                                <li>Aroma therapy</li>
+                                <li>Face masks</li>
+                                <li>Geothermal Spa</li>
+                                <li>Sauna relax</li>
+                                <li>Aroma therapy</li>
+                            </ul>
+                        </div>
+                        <div class="price-count mb-30">
+                            <h2><sub>$</sub>99 <strong>/ Monthly</strong></h2>
+                        </div>
+
+                        <div class="pricing-btn">
+                            <a href="shop-details.html" class="btn ss-btn"><i class="fas fa-angle-right btn-icon mr-1"></i> Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pricing-area-end -->
+
+    <!-- testimonial-area -->
+    <section class="testimonial-area pt-120 pb-120 p-relative fix" style="background-color: #fff5f4;">
+        <div class="test-an-01"><img src="img/bg/test-an-01.png" alt="test-an-01"></div>
+        <div class="test-an-02"><img src="img/bg/test-an-02.png" alt="test-an-02"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title center-align mb-50 text-center">
+
+                        <h2>
+                            What Our Clients Says
+                        </h2>
+                        <span class="line5"> <img src="img/bg/circle_left.png" alt="circle_left"></span>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="testimonial-active2">
+                        <div class="single-testimonial text-center">
+                            <div class="qt-img wow fadeInDown  animated" data-delay=".4s">
+                                <img src="img/testimonial/qt-icon.png" alt="img">
+                            </div>
+                            <p class=" wow fadeInUp  animated">Donec vel dictum magna, sed vehicula ipsum. Phasellus a aliquet erat. Duis luctus quis nisi vel consectetur. Ut ac neque felis. Vivamus scelerisque pretium nisi eget mollis. Morbi suscipit accumsan elit, at pellentesque ante placerat vitae. Nulla molestie tortor massa, in lacinia ex dignissim et. Nullam maximus, turpis sit amet laoreet mollis, elit lectus rutrum purus, nec accumsan felis sapien vitae leo. Mauris id tincidunt nibh, sit amet mattis felis.</p>
+                            <div class="test-line">
+                                <img src="img/bg/test-line.png" alt="test-line">
+                            </div>
+                            <div class="testi-author">
+                                <img src="img/testimonial/testi_avatar.png" alt="img">
+                                <div class="ta-info">
+                                    <h6>Joseph Austin</h6>
+                                    <span>Co-Leader</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="single-testimonial text-center">
+                            <div class="qt-img wow fadeInDown  animated" data-delay=".4s">
+                                <img src="img/testimonial/qt-icon.png" alt="img">
+                            </div>
+                            <p class=" wow fadeInUp  animated">Donec vel dictum magna, sed vehicula ipsum. Phasellus a aliquet erat. Duis luctus quis nisi vel consectetur. Ut ac neque felis. Vivamus scelerisque pretium nisi eget mollis. Morbi suscipit accumsan elit, at pellentesque ante placerat vitae. Nulla molestie tortor massa, in lacinia ex dignissim et. Nullam maximus, turpis sit amet laoreet mollis, elit lectus rutrum purus, nec accumsan felis sapien vitae leo. Mauris id tincidunt nibh, sit amet mattis felis.</p>
+                            <div class="test-line">
+                                <img src="img/bg/test-line.png" alt="test-line">
+                            </div>
+                            <div class="testi-author">
+                                <img src="img/testimonial/testi_avatar.png" alt="img">
+                                <div class="ta-info">
+                                    <h6>Margie R. Robinson</h6>
+                                    <span>Web Developer</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="single-testimonial text-center">
+                            <div class="qt-img wow fadeInDown  animated" data-delay=".4s">
+                                <img src="img/testimonial/qt-icon.png" alt="img">
+                            </div>
+                            <p class=" wow fadeInUp  animated">Donec vel dictum magna, sed vehicula ipsum. Phasellus a aliquet erat. Duis luctus quis nisi vel consectetur. Ut ac neque felis. Vivamus scelerisque pretium nisi eget mollis. Morbi suscipit accumsan elit, at pellentesque ante placerat vitae. Nulla molestie tortor massa, in lacinia ex dignissim et. Nullam maximus, turpis sit amet laoreet mollis, elit lectus rutrum purus, nec accumsan felis sapien vitae leo. Mauris id tincidunt nibh, sit amet mattis felis.</p>
+                            <div class="test-line">
+                                <img src="img/bg/test-line.png" alt="test-line">
+                            </div>
+                            <div class="testi-author">
+                                <img src="img/testimonial/testi_avatar.png" alt="img">
+                                <div class="ta-info">
+                                    <h6>Margie R. Robinson</h6>
+                                    <span>Web Developer</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial-area-end -->
+
+    <!-- blog-area -->
+    <section id="blog" class="blog-area  p-relative pt-95 pb-90 fix">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="section-title center-align mb-50 text-center">
+                        <h2>
+                            Latest Blog & News
+                        </h2>
+                        <span class="line3"> <img src="img/bg/circle_left.png" alt="circle_left"></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="single-post2 mb-30  wow fadeInDown  animated">
+                        <div class="blog-thumb2">
+                            <a href="blog-details.html"><img src="img/blog/blog_img01.png" alt="img"></a>
+
+                        </div>
+                        <div class="blog-content2">
+                            <div class="b-meta">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        7 March, 2019
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4><a href="blog-details.html">How do I Sell Affiliate Products to My Customers</a></h4>
+                                </div>
+                            </div>
+                            <div class="b-meta">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-8 col-md-8">
+                                        <div class="adim-box">
+                                            <div class="c-icon"><img src="img/blog/admin-img.png" alt="c-Icon.png"></div>
+                                            <div class="text">
+                                                Mixlax M.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="blog-btn"><a href="#">Read More</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="single-post2 mb-30  wow fadeInUp  animated">
+                        <div class="blog-thumb2">
+                            <a href="blog-details.html"><img src="img/blog/blog_img02.png" alt="img"></a>
+
+                        </div>
+                        <div class="blog-content2">
+                            <div class="b-meta">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        7 March, 2019
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4><a href="blog-details.html">How do I Sell Affiliate Products to My Customers</a></h4>
+                                </div>
+                            </div>
+
+                            <div class="b-meta">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-8 col-md-8">
+                                        <div class="adim-box">
+                                            <div class="c-icon"><img src="img/blog/admin-img.png" alt="c-Icon.png"></div>
+                                            <div class="text">
+                                                Mixlax M.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="blog-btn"><a href="#">Read More</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="single-post2 mb-30 wow fadeInDown  animated">
+                        <div class="blog-thumb2">
+                            <a href="blog-details.html"><img src="img/blog/blog_img03.png" alt="img"></a>
+
+                        </div>
+                        <div class="blog-content2">
+                            <div class="b-meta">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        7 March, 2019
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4><a href="blog-details.html">How do I Sell Affiliate Products to My Customers</a></h4>
+                                </div>
+                            </div>
+                            <div class="b-meta">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-8 col-md-8">
+                                        <div class="adim-box">
+                                            <div class="c-icon"><img src="img/blog/admin-img.png" alt="c-Icon.png"></div>
+                                            <div class="text">
+                                                Mixlax M.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="blog-btn"><a href="#">Read More</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- blog-area-end -->
+
+    <!-- brand-area -->
+    <div class="brand-area pt-60 pb-60" style="background:url(img/bg/client-bg-log.png);background-repeat: no-repeat;background-size: cover;">
+        <div class="container">
+            <div class="row brand-active">
+                <div class="col-xl-3">
+                    <div class="single-brand">
+                        <img src="img/brand/c-logo1.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="single-brand">
+                        <img src="img/brand/c-logo2.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="single-brand">
+                        <img src="img/brand/c-logo3.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="single-brand">
+                        <img src="img/brand/c-logo4.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="single-brand">
+                        <img src="img/brand/c-logo4.png" alt="img">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- brand-area-end -->
+
+
+</main>
+<!-- main-area-end -->
+<!-- footer -->
+<footer class="footer-bg footer-p">
+    <div class="footer-top  pt-70 pb-40">
+        <div class="container">
+            <div class="row justify-content-between">
+
+                <div class="col-xl-4 col-lg-4 col-sm-6">
+                    <div class="footer-widget mb-30">
+                        <div class="f-widget-title mb-30">
+                            <img src="img/logo/f_logo.png" alt="img">
+                        </div>
+                        <div class="footer-link">
+                            Aenean pulvinar laoreet tellus ut tinct. Praesent a lectus egestas, finibus enim sit amet, mollis lorem. Sed a volutpat velit. Pellet habitant morbi tristique senectus et.
+                        </div>
+                        <div class="footer-social  mt-30">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-sm-6">
+                    <div class="footer-widget mb-30">
+                        <div class="f-widget-title">
+                            <h2>About</h2>
+                        </div>
+                        <div class="footer-link">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html"> About Us</a></li>
+                                <li><a href="services.html"> Services </a></li>
+                                <li><a href="contact.html"> Contact Us</a></li>
+                                <li><a href="blog.html">Blog </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-sm-6">
+                    <div class="footer-widget mb-30">
+                        <div class="f-widget-title">
+                            <h2>Services</h2>
+                        </div>
+                        <div class="footer-link">
+                            <ul>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Privercy</a></li>
+                                <li><a href="#">Term & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-sm-6">
+                    <div class="footer-widget mb-30">
+                        <div class="f-contact">
+                            <ul>
+                                <li>
+                                    <i class="icon fal fa-phone"></i>
+                                    <span>1800-121-3637<br>+91-7052-101-786</span>
+                                </li>
+                                <li><i class="icon fal fa-envelope"></i>
+                                    <span>
+                                            <a href="mailto:info@example.com">info@example.com</a>
+                                       <br>
+                                       <a href="mailto:help@example.com">help@example.com</a>
+                                       </span>
+                                </li>
+                                <li>
+                                    <i class="icon fal fa-map-marker-check"></i>
+                                    <span>1247/Plot No. 39, 15th Phase, LHB Colony, Kanpur</span>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright-wrap">
+        <div class="container">
+            <div class="row align-items-center text-center">
+                <div class="col-12">
+                    Copyright  &copy; 2021 Luxia. All rights reserved.
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer-end -->
+
+
+<!-- JS here -->
+<script src="static/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="static/assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="static/assets/js/popper.min.js"></script>
+<script src="static/assets/js/bootstrap.min.js"></script>
+<script src="static/assets/js/one-page-nav-min.js"></script>
+<script src="static/assets/js/slick.min.js"></script>
+<script src="static/assets/js/ajax-form.js"></script>
+<script src="static/assets/js/paroller.js"></script>
+<script src="static/assets/js/wow.min.js"></script>
+<script src="static/assets/js/js_isotope.pkgd.min.js"></script>
+<script src="static/assets/js/imagesloaded.min.js"></script>
+<script src="static/assets/js/parallax.min.js"></script>
+<script src="static/assets/js/jquery.waypoints.min.js"></script>
+<script src="static/assets/js/jquery.counterup.min.js"></script>
+<script src="static/assets/js/jquery.scrollUp.min.js"></script>
+<script src="static/assets/js/jquery.meanmenu.min.js"></script>
+<script src="static/assets/js/parallax-scroll.js"></script>
+<script src="static/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="static/assets/js/element-in-view.js"></script>
+<script src="static/assets/js/main.js"></script>
+</body>
+</html>
